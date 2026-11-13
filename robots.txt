@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://visibilitenova.github.io/sitemap.xml
