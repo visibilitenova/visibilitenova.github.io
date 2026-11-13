@@ -22,6 +22,7 @@ a{color:#1D4ED8}a:hover{color:#1E3A8A}
 html{scroll-behavior:smooth}
 a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3px;border-radius:6px}
 @media (max-width:640px){.navlink{display:none!important}header>div{flex-wrap:nowrap!important;padding:14px 18px!important}}
+[hidden]{display:none!important}.nova-form{width:100%;max-width:560px;background:#FFFFFF;border-radius:16px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:16px;text-align:left;color:#0F172A;font-family:Inter,sans-serif;scroll-margin-top:90px}.nf{display:flex;flex-direction:column;gap:6px;font-size:15px;font-weight:600;color:#0F172A}.nf input{font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1px solid #CBD5E1;border-radius:10px;min-height:48px;box-sizing:border-box;width:100%;color:#0F172A;background:#FFFFFF}.nf input:focus{outline:3px solid #60A5FA;outline-offset:1px;border-color:#2563EB}.nf input.bad{border-color:#DC2626}.nova-form button{font:inherit;background:#2563EB;color:#FFFFFF;border:0;font-weight:600;font-size:17px;padding:16px 26px;border-radius:12px;min-height:52px;cursor:pointer}.nova-form button:hover{background:#1D4ED8}.nova-form button:disabled{opacity:.6;cursor:wait}.nf-err{margin:0;color:#B91C1C;font-size:15px}.nf-note{margin:0;font-size:13px;color:#64748B}
 </style>
 </head>
 <body>
@@ -37,7 +38,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 <a class="navlink" href="#fonctionnement" style="color: #CBD5E1; text-decoration: none; font-size: 15px">Comment ça marche</a>
 <a class="navlink" href="#prix" style="color: #CBD5E1; text-decoration: none; font-size: 15px">Prix</a>
 <a class="navlink" href="#faq" style="color: #CBD5E1; text-decoration: none; font-size: 15px">Questions</a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/viewform" target="_blank" rel="noopener" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Analyse gratuite</a>
+<a href="#demande" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Analyse gratuite</a>
 </nav>
 </div>
 </header>
@@ -49,7 +50,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 58px); line-height: 1.05; letter-spacing: -0.02em">Est-ce que ChatGPT recommande votre entreprise&#160;?</h1>
 <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #CBD5E1; max-width: 560px">De plus en plus de clients demandent à l'IA où aller. On vous aide à faire partie des réponses, sur ChatGPT comme sur Google.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/viewform" target="_blank" rel="noopener" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 26px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Recevoir mon analyse gratuite</a>
+<a href="#demande" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 26px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Recevoir mon analyse gratuite</a>
 <span style="color: #94A3B8; font-size: 15px">Gratuit, sans engagement. Réponse en 48 heures.<br><a href="#test" style="color: #93C5FD">Ou faites le test vous-même en 30 secondes ↓</a></span>
 </div>
 </div>
@@ -110,7 +111,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 <p style="margin: 0; font-weight: 600; font-size: 18px">Regardez si votre entreprise est dans la réponse</p>
 </div>
 </div>
-<p style="margin: 0; font-size: 17px; color: #334155">Vous n'y êtes pas&#160;? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/viewform" target="_blank" rel="noopener" style="font-weight: 600">On peut vous dire pourquoi, gratuitement.</a></p>
+<p style="margin: 0; font-size: 17px; color: #334155">Vous n'y êtes pas&#160;? <a href="#demande" style="font-weight: 600">On peut vous dire pourquoi, gratuitement.</a></p>
 </section>
 
 <section id="fonctionnement" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 32px">
@@ -164,7 +165,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 <span style="font-size: 17px">Suivi mensuel</span><span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 34px">200&#160;$</span><span style="color: #475569"> / mois</span></span>
 </div>
 <p style="margin: 0; font-size: 15px; color: #475569">Sans contrat à long terme. Vous arrêtez quand vous voulez.</p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/viewform" target="_blank" rel="noopener" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 24px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">Commencer par l'analyse gratuite</a>
+<a href="#demande" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 24px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">Commencer par l'analyse gratuite</a>
 </div>
 </section>
 
@@ -214,7 +215,19 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(28px, 3.6vw, 42px); letter-spacing: -0.02em">Savoir où vous en êtes, gratuitement</h2>
 <p style="margin: 0; font-size: 18px; color: #CBD5E1; max-width: 560px; line-height: 1.6">Recevez votre analyse d'une page en 48 heures. Aucun engagement.</p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/viewform" target="_blank" rel="noopener" style="background: #2563EB; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 26px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Recevoir mon analyse gratuite</a>
+<form id="demande" class="nova-form" novalidate>
+<label class="nf"><span>Votre nom</span><input type="text" name="entry.425755859" autocomplete="name" required></label>
+<label class="nf"><span>Nom de votre entreprise</span><input type="text" name="entry.2073558861" autocomplete="organization" required></label>
+<label class="nf"><span>Votre métier ou secteur</span><input type="text" name="entry.597850057" autocomplete="off" required></label>
+<label class="nf"><span>Ville principale où vous cherchez des clients</span><input type="text" name="entry.172498837" autocomplete="address-level2" required></label>
+<label class="nf"><span>Votre adresse courriel</span><input type="email" name="entry.1661776086" autocomplete="email" required></label>
+<label class="nf"><span>Site Web de votre entreprise <span style="color:#94A3B8;font-weight:400">(facultatif)</span></span><input type="text" name="entry.572488630" autocomplete="url"></label>
+<label class="nf"><span>Téléphone <span style="color:#94A3B8;font-weight:400">(facultatif)</span></span><input type="tel" name="entry.620884476" autocomplete="tel"></label>
+<p class="nf-err" id="nf-err" role="alert" hidden></p>
+<button type="submit" id="nf-btn">Recevoir mon analyse gratuite</button>
+<p class="nf-note">Vos renseignements servent seulement à préparer votre analyse. <a href="confidentialite.html" style="color:#1D4ED8">Confidentialité</a></p>
+</form>
+<div id="nf-merci" class="nova-form" hidden tabindex="-1" style="text-align:center"><p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;color:#0B1B33">Merci&#160;! Votre demande est bien reçue.</p><p style="margin:0;color:#334155;font-size:16px;line-height:1.6">Vous recevrez votre analyse gratuite par courriel d'ici 48&#160;heures.</p></div>
 <p style="margin: 0; font-size: 15px; color: #94A3B8">Vous préférez écrire directement ? <a href="mailto:loik.camiranddnova@gmail.com" style="color: #93C5FD">loik.camiranddnova@gmail.com</a></p>
 </div>
 <div style="border-top: 1px solid #1E3354">
@@ -226,5 +239,15 @@ a:focus-visible,summary:focus-visible{outline:3px solid #60A5FA;outline-offset:3
 </section>
 
 </div>
+<script>
+(function(){var f=document.getElementById('demande');if(!f)return;var err=document.getElementById('nf-err'),btn=document.getElementById('nf-btn');
+f.addEventListener('submit',function(ev){ev.preventDefault();var bad=null;
+Array.prototype.forEach.call(f.querySelectorAll('input'),function(i){i.value=i.value.trim();var ok=i.checkValidity()&&!(i.required&&!i.value);i.classList.toggle('bad',!ok);if(!ok&&!bad)bad=i;});
+if(bad){err.textContent=bad.type==='email'&&bad.value?'Veuillez entrer une adresse courriel valide.':'Veuillez remplir les champs obligatoires.';err.hidden=false;bad.focus();return;}
+err.hidden=true;btn.disabled=true;btn.textContent='Envoi en cours…';
+fetch('https://docs.google.com/forms/d/e/1FAIpQLSdm9_NkuFFT_-69OLtzS2kk9WDBL2BSCial6yu7e3CO5Ip_WA/formResponse',{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))})
+.then(function(){f.hidden=true;var m=document.getElementById('nf-merci');m.hidden=false;m.focus();})
+.catch(function(){btn.disabled=false;btn.textContent='Recevoir mon analyse gratuite';err.innerHTML='L\'envoi n\'a pas fonctionné. Réessayez, ou écrivez-moi à <a href="mailto:loik.camiranddnova@gmail.com">loik.camiranddnova@gmail.com</a>.';err.hidden=false;});});})();
+</script>
 </body>
 </html>
